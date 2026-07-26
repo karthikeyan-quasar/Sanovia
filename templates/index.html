@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanovia.Ai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container"><a href="/index" class="navbar-logo">Sanovia.Ai</a>
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="/index" class="active">Client Interface</a></li>
+            <li><a href="/model">Model</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/about" >About us</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="generation-screen"><h3>response generated</h3><textarea id="generation"></textarea></div>
+    <div id="controls">
+        <div class="camera"><button><img src="{{ url_for('static', filename='images/cam.jpeg') }}"></button></div>
+        <div class="mic"><button id="microphone"><img src="{{ url_for('static', filename='images/mic.png') }}"></button></div>
+        <div class="value"><textarea class="responsetext" id="responsetext"></textarea></div>
+        <div class="send" onclick="sendResponse()"><button>send</button></div>
+    </div>
+</div>
+<div class="down">
+    Sanovia Ai | This AI provides informational support and is not a substitute for professional medical advice.
+    This model is still under devlopment and the model can still make errors so make sure to double check it.<a href="/tc">T&C</a>
+</div>
+</body>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
