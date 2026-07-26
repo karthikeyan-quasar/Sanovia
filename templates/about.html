@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanovia.Ai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about_style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container"><a href="/index" class="navbar-logo">Sanovia.Ai</a>
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="/index" >Client Interface</a></li>
+            <li><a href="/model">Model</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/about" class="active">About us</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>About us</h1>
+        <p>
+            I am Karthikeyan, and along with my teammates Niranjan, Hari, Raghav, Akshay, and Sudev, we developed Sanovia.ai as our Class 12 AI (843) Investigatory Project. Our goal is to use artificial intelligence to provide quick first-aid guidance based on a user's symptoms, helping people respond effectively during emergencies. Through this journey, we transformed our ideas into a practical solution while developing technical expertise, critical thinking, and a deeper understanding of how AI can positively impact society.
+        </p>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='js/about_script.js') }}"></script>
+</html>
